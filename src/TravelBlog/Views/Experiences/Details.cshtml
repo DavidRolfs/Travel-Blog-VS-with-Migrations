@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Travel Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model TravelBlog.Models.Experience
+
+
+<h2>Experience Details</h2>
+<hr />
+
+<p>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</p>
+<p>@Html.DisplayNameFor(model => model.LocationId) : @Html.DisplayFor(model => model.LocationId)</p>
+<p>@Html.DisplayNameFor(model => model.Year) : @Html.DisplayFor(model => model.Year)</p>
+
+<p>@Html.ActionLink("Edit", "Edit", new { id = Model.ExperienceId }) | @Html.ActionLink("Back to List", "Index")</p>
