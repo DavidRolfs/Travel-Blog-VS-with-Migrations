@@ -1,0 +1,13 @@
+﻿@model TravelBlog.Models.Location
+
+@{
+    ViewData["Title"] = "TravelBlog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Details</h2>
+<hr />
+<p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
+<p>@Html.DisplayNameFor(model => model.Country): @Html.DisplayFor(model => model.Country)</p>
+<p>@Html.ActionLink("Back to list", "Index")</p>
